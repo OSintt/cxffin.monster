@@ -1,0 +1,22 @@
+    <div class="profile-card-wrapper flex headline" id="myPopup">
+        <div class="profile-card" >
+            <div class="profile-banner"></div>
+            <div class="profile-info flex">
+                <div class="profile-avatar" style="background-image: url('<%- imageURL %>')"></div>
+                <div class="profile-badges"></div>
+                <div class="profile-user">
+                    <%-username%><span>#<%-discriminator%></span>
+                </div>
+            </div>
+            <div class="profile-bio">
+                <div class="profile-status">
+                    <div>
+                        <img src="<%-emojiURL%>" class="status-emoji"/><span><%-status%></span>
+                    </div>
+                    <div class="next" onclick="plusSlides(1)">Next</div>
+                </div>
+                <div class="divider">
+                </div>
+            </div>
+        </div>
+    </div>

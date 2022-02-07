@@ -1,0 +1,62 @@
+        .profile-card-wrapper {
+            margin: 1em;
+            display: none;
+        }
+
+        .profile-card {
+            background: #18191c;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.24);
+            width: 300px;
+            padding: 1em;
+        }
+
+        .profile-user {
+            color:  #fff;
+            font-weight: 600;
+        }
+
+        .profile-user span {
+            color: #b9bbbe;
+        }
+
+        .profile-avatar {
+            border-radius: 50%;
+            background-color: #18191C;
+            height: 50px;
+            width: 50px;
+            border: 7px solid #18191C;
+            background-size: contain;
+            margin-top: -30px;
+        }
+
+        .profile-banner {
+            width: inherit;
+            height: 20px;
+        }
+
+        .profile-status {
+            color:  #dcddde;
+            font-size: 14px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .profile-status > div {
+            display: flex;
+            align-items: center;
+        }
+        .status-emoji {
+            width: 25px;
+            height: 25px;
+            margin: 0 7px;
+        }
+
+        .divider {
+            height: 1px;
+            margin-bottom: 1px;
+            background: hsla(0,0%,100%,0.06);
+        }
+        
