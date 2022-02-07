@@ -8,37 +8,30 @@
 		body {
 			background: #0c0c0c;
 			color:  #eee;
+			font-family: 'Montserrat', sans-serif;
 		}
 
 		a {
 			color: #eee;
 		}
 		.container {
-			font-family: 'Montserrat', sans-serif;
+			min-height: 100vh;
+			display: grid;
+			align-items: center;
+			justify-items: center;
 		}
 
 		.head {
 			opacity: .5;
 			font-size: 18px;
-		}
-
-		.head > span:first-child {
 			position: fixed;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
 			top: 0;
-			left: 0;
-		}
-
-		.head > span:nth-child(2) {
-			position: fixed;
-			top: 0;
-			right: 0;
 		}
 
 		.body {
-			min-height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
 			z-index: 3;
 		}
 

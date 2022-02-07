@@ -14,6 +14,7 @@
         .profile-user {
             color:  #fff;
             font-weight: 600;
+            display: flex;
         }
 
         .profile-user span {
@@ -28,6 +29,7 @@
             border: 7px solid #18191C;
             background-size: contain;
             margin-top: -30px;
+            margin-left: -5px;
         }
 
         .profile-banner {
@@ -51,7 +53,7 @@
         .status-emoji {
             width: 25px;
             height: 25px;
-            margin: 0 7px;
+            margin-right: 7px;
         }
 
         .divider {
@@ -59,4 +61,30 @@
             margin-bottom: 1px;
             background: hsla(0,0%,100%,0.06);
         }
+
+@media (max-width: 758px) {
+    .profile-card-wrapper {
+        margin: 1em 0 0 1em;
+    }
+    .profile-card {
+        width: 120px;
+        margin: 0;
+    }
+
+    .profile-info {
+        display: block;
+        word-break: break-all;
+    }
+
+    .profile-user {
+        display: block;
+    }
+    .profile-status .profile-status-first {
+        display: none;
+    }
+
+    .profile-avatar {
+        display: block;
+    }
+}
         
