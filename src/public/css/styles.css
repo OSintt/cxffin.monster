@@ -1,4 +1,4 @@
-		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
+
 
 		* {
 			margin: 0;
@@ -6,14 +6,11 @@
 		}
 
 		body {
-			background: #0c0c0c;
+			background: #f5f5f5;
 			color:  #eee;
-			font-family: 'Montserrat', sans-serif;
+			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 		}
 
-		a {
-			color: #eee;
-		}
 		.container {
 			min-height: 100vh;
 			display: grid;
@@ -21,92 +18,7 @@
 			justify-items: center;
 		}
 
-		.head {
-			opacity: .5;
-			font-size: 18px;
-			position: fixed;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			top: 0;
-		}
-
-		.body {
-			z-index: 3;
-		}
-
-		.body h1, .body h2 {
-			text-align: center;
-		}
-
-		.footer {
-			position: fixed;
-			width: 100%;
-			text-align: center;
-			bottom: 0;
-			z-index: 2;
-			width: 100%;
-		}
-		h2 {
-			font-size: 12px;
-		}
-
-		h2:hover {
-			cursor: pointer;
-		}
-
-
-		.hidden {
-			visibility: hidden;
-		}
-
-		.show {
-			visibility: visible;
-		}
-
-        .flex {
-            display: flex;
-        }
-
-		.popuptext {
-			position: absolute;
-			margin-left: -20px;
-			opacity: 0;
-			transition: opacity 0.3s;
-		}
-
-		.popup:hover .popuptext {
-		  visibility: visible;
-		  opacity: 1;
-		}
-
-		.subtitles {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.dot {
-			background: #eee;
-			height: 3px;
-			width: 10px;
-			opacity: 0;
-			animation: gotero 2s linear infinite;
-		}
-
-		.next:hover {
-			cursor: pointer;
-		}
-
-		.show {
-			animation: fade 0.3s;
-		}
-
-		@keyframes gotero {
-			0% {width: 0%}
-  			100% {width: 100%}
-		}
-
-		@keyframes fade {
-			from { opacity: 0; }
-			to { opacity: 1; }
-		}
+h1, h4 {
+  font-weight: 300;
+  color: #9288EE; 
+}
