@@ -7,12 +7,9 @@ app.set('views', __dirname + '/views');
 
 app.set('view engine', 'ejs');
 
-
 app.set('port', process.env.PORT || 3000);
 
-
-
-app.get('/', function(req, res){
+app.get('/', function (req, res) {
   res.render('index');
 });
 
