@@ -1,112 +1,215 @@
-		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap");
 
-		* {
-			margin: 0;
-			padding: 0;
-		}
+* {
+  margin: 0;
+  padding: 0;
+}
 
-		body {
-			background: #0c0c0c;
-			color:  #eee;
-			font-family: 'Montserrat', sans-serif;
-		}
+body {
+  background: #0c0c0c;
+  color: #eee;
+  font-family: "Montserrat", sans-serif;
+}
 
-		a {
-			color: #eee;
-		}
-		.container {
-			min-height: 100vh;
-			display: grid;
-			align-items: center;
-			justify-items: center;
-		}
+a {
+  color: #eee;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
 
-		.head {
-			opacity: .5;
-			font-size: 18px;
-			position: fixed;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			top: 0;
-		}
+.head {
+  opacity: 0.5;
+  font-size: 18px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
 
-		.body {
-			z-index: 3;
-		}
+.body {
+  z-index: 3;
+}
 
-		.body h1, .body h2 {
-			text-align: center;
-		}
+.body h1,
+.body h2 {
+  text-align: center;
+}
 
-		.footer {
-			position: fixed;
-			width: 100%;
-			text-align: center;
-			bottom: 0;
-			z-index: 2;
-			width: 100%;
-		}
-		h2 {
-			font-size: 12px;
-		}
+.footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+}
+h2 {
+  font-size: 12px;
+}
 
-		h2:hover {
-			cursor: pointer;
-		}
+h2:hover {
+  cursor: pointer;
+}
 
+.hidden {
+  visibility: hidden;
+}
 
-		.hidden {
-			visibility: hidden;
-		}
+.show {
+  visibility: visible;
+}
 
-		.show {
-			visibility: visible;
-		}
+.flex {
+  display: flex;
+}
 
-        .flex {
-            display: flex;
-        }
+.popuptext {
+  position: absolute;
+  margin-left: -20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
-		.popuptext {
-			position: absolute;
-			margin-left: -20px;
-			opacity: 0;
-			transition: opacity 0.3s;
-		}
+.popup:hover .popuptext {
+  visibility: visible;
+  opacity: 1;
+}
 
-		.popup:hover .popuptext {
-		  visibility: visible;
-		  opacity: 1;
-		}
+.subtitles {
+  display: flex;
+  justify-content: space-between;
+}
 
-		.subtitles {
-			display: flex;
-			justify-content: space-between;
-		}
+.next:hover {
+  cursor: pointer;
+}
 
-		.dot {
-			background: #eee;
-			height: 3px;
-			width: 10px;
-			opacity: 0;
-			animation: gotero 2s linear infinite;
-		}
+.show {
+  animation: fade 0.3s;
+}
 
-		.next:hover {
-			cursor: pointer;
-		}
+.equilizer {
+  height: 15px;
+  transform: rotate(180deg);
+}
 
-		.show {
-			animation: fade 0.3s;
-		}
+.bar {
+  fill: #eee;
+  width: 18px;
+  animation: equalize 4s 0s infinite;
+}
 
-		@keyframes gotero {
-			0% {width: 0%}
-  			100% {width: 100%}
-		}
+.bar:nth-child(1) {
+  animation-delay: -1.9s;
+}
 
-		@keyframes fade {
-			from { opacity: 0; }
-			to { opacity: 1; }
-		}
+.bar:nth-child(2) {
+  animation-delay: -2s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: -2.3s;
+}
+
+.bar:nth-child(4) {
+  animation-delay: -2.4s;
+}
+
+.bar:nth-child(5) {
+  animation-delay: -2.1s;
+}
+
+@keyframes equalize {
+  0% {
+    height: 60px;
+  }
+  4% {
+    height: 50px;
+  }
+  8% {
+    height: 40px;
+  }
+  12% {
+    height: 30px;
+  }
+  16% {
+    height: 20px;
+  }
+  20% {
+    height: 30px;
+  }
+  24% {
+    height: 40px;
+  }
+  28% {
+    height: 10px;
+  }
+  32% {
+    height: 40px;
+  }
+  36% {
+    height: 60px;
+  }
+  40% {
+    height: 20px;
+  }
+  44% {
+    height: 40px;
+  }
+  48% {
+    height: 70px;
+  }
+  52% {
+    height: 30px;
+  }
+  56% {
+    height: 10px;
+  }
+  60% {
+    height: 30px;
+  }
+  64% {
+    height: 50px;
+  }
+  68% {
+    height: 60px;
+  }
+  72% {
+    height: 70px;
+  }
+  76% {
+    height: 80px;
+  }
+  80% {
+    height: 70px;
+  }
+  84% {
+    height: 60px;
+  }
+  88% {
+    height: 50px;
+  }
+  92% {
+    height: 60px;
+  }
+  96% {
+    height: 70px;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
